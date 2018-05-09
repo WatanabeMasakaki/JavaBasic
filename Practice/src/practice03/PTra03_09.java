@@ -8,6 +8,39 @@ package practice03;
 
 public class PTra03_09 {
 	public static void main(String[] args) {
+	  System.out.println("０～６までの数字を入力してもらいます");
+	  int input = new java.util.Scanner(System.in).nextInt();
+
+      switch (input) {
+      case 0:
+    	  System.out.println("日曜日");
+    	  break;
+      case 1:
+    	  System.out.println("月曜日");
+    	  break;
+      case 2:
+    	  System.out.println("火曜日");
+    	  break;
+      case 3:
+    	  System.out.println("水曜日");
+    	  break;
+      case 4:
+    	  System.out.println("木曜日");
+    	  break;
+      case 5:
+    	  System.out.println("金曜日");
+    	  break;
+      case 6:
+    	  System.out.println("土曜日");
+    	  break;
+      default:
+    	  System.out.println("0～6の整数を入力してください");
+
+      }
+
+
+
+
 		/*
 		 * ★ 以下の仕様に沿ってプログラムを完成させてください
 		 *

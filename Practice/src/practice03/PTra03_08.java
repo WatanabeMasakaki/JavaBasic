@@ -26,6 +26,27 @@ public class PTra03_08 {
 		int money = 1000;	// 所持金
 
 		//---------------------ここから本題-----------------------
+		int a = money - 150;
+		int b = money - 160;
+		int c = money - 200;
+
+
+		switch (num) {
+		 case 1:
+		  System.out.println(a);
+		  break;
+		 case 2:
+		  System.out.println(b);
+		  break;
+		 case 3:
+		  System.out.println(c);
+		  break;
+		}
+
+
+
+
+
 		/*
 		 * ★ 以下の仕様に沿ってプログラムを完成させてください
 		 *

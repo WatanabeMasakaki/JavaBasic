@@ -22,6 +22,20 @@ public class PTra03_05 {
 		int num = Integer.parseInt(line);
 
 		//---------------------ここから本題-----------------------
+		if (num >= 75) {
+		 System.out.println("雨が降る確率が高いです");
+		}else if(num >= 30 && num <= 74) {
+		 System.out.println("雨が降るかもしれないです");
+		}else {
+		 System.out.println("雨は降らないでしょう");
+		}
+
+
+
+
+
+
+
 		/*
 		 * ★ 以下の仕様に沿ってプログラムを完成させてください
 		 *
