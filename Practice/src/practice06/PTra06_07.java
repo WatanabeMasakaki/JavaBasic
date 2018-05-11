@@ -9,6 +9,39 @@ package practice06;
 public class PTra06_07 {
 	public static void main(String[] args) {
 
+		  for (int num = 0;num <= 9;num ++) {
+		    switch (num) {
+			  case 0:
+			    System.out.println("□□□□□");
+			    break;
+			  case 1:
+				System.out.println("■□□□□");
+				break;
+			  case 2:
+				System.out.println("■■□□□");
+				break;
+			  case 3:
+				System.out.println("■■■□□");
+				break;
+			  case 4:
+			    System.out.println("■■■■□");
+			    break;
+			  case 5:
+			    System.out.println("■■■■■");
+				break;
+			  case 6:
+			    System.out.println("■■■■□");
+				break;
+			  case 7:
+			    System.out.println("■■■□□");
+				break;
+		      case 8:
+				System.out.println("■■□□□");
+				break;
+		      case 9:
+			    System.out.println("■□□□□");
+				break;
+		}
 		// ★ for文を使って、以下のような出力になるようにしてください
 		/*
 		 * 出力結果例
@@ -24,6 +57,6 @@ public class PTra06_07 {
 		 * ■■□□□
 		 * ■□□□□
 		 */
-
+		  }
 	}
 }

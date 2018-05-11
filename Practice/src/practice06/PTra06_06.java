@@ -8,7 +8,25 @@ package practice06;
 
 public class PTra06_06 {
 	public static void main(String[] args) {
-
+		for (int num = 0;num <= 4;num ++) {
+		  switch (num) {
+		    case 0:
+		    	System.out.println("□□□□□");
+		    	break;
+		    case 1:
+		    	System.out.println("■□□□□");
+		    	break;
+		    case 2:
+		    	System.out.println("■■□□□");
+		    	break;
+		    case 3:
+		    	System.out.println("■■■□□");
+		    	break;
+		    case 4:
+		    	System.out.println("■■■■□");
+		    	break;
+		    }
+	   }
 		// ★ for文を使って、以下のような出力になるようにしてください
 		/*
 		 * 出力結果例

@@ -8,7 +8,9 @@ package practice06;
 
 public class PTra06_03 {
 	public static void main(String[] args) {
-
+      for (int num = 0;num <= 4;num ++) {
+        System.out.println("■");
+      }
 		// ★ for文を使って、以下のような出力になるようにしてください
 		/*
 		 * 出力結果例

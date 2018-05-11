@@ -17,7 +17,7 @@ public class PTra04_04 {
 
 		// ★ int型の変数progressを宣言して、0で初期化してください
         int progress = 0;
-        
+
 		System.out.println("このスゴロクは、" + map + "マスです。");
 		System.out.println("=========< START >==========");
 
@@ -38,7 +38,7 @@ public class PTra04_04 {
 			progress += dice;
 
 			// ★ 「残り##マス」と出力してください（##には、残りマスの数を入れてください）
-		System.out.println("残り" +    "マス");
+		System.out.println("残り" + progress+  "マス");
 		}
 
 		System.out.println("=========< GOAL >==========");
