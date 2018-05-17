@@ -27,7 +27,13 @@ public class PTra08_06 {
 	 */
 	public static void dispValue(String message) {
 		System.out.println("「" + message + "」");
+
 	}
+	  public static void dispValue (int x) {
+
+	}
+
+
 
 	// ★ dispValueを引数intでオーバーロードしてください。処理は同じ
 
@@ -38,3 +44,19 @@ public class PTra08_06 {
 	// ★ dispValueを引数charでオーバーロードしてください。処理は同じ
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
