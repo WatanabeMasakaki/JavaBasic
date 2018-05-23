@@ -30,5 +30,90 @@ public class PTra10_06 {
 		car3.color = "black";
 		car3.gasoline = 15;
 
+
+
+		// 目的地までの距離
+				final int distance = 300;
+				int sum1 = 0; // carクラスのrunメソッドから返された値（距離）の合計
+				int count1 = 0; //目的地に行くのにかかった時間
+
+				 while(true) {
+				   int run1 = car1.run();
+				   count1++;
+
+					  if(run1 == -1) {
+						System.out.println("目的地に到達できませんでした");
+						break;
+					}
+
+					sum1 += run1;
+					System.out.println(sum1);
+
+					  if(sum1 >= distance) {
+						System.out.println("目的地にまで" + count1 + "時間かかりました。残りのガソリンは、" + car1.gasoline + "リットルです");
+						break;
+					}
+				}
+
+					int sum2 = 0; // carクラスのrunメソッドから返された値（距離）の合計
+					int count2= 0; //目的地に行くのにかかった時間
+
+					 while(true) {
+					   int run2 = car2.run();
+					   count2++;
+
+						  if(run2 == -1) {
+							System.out.println("目的地に到達できませんでした");
+							break;
+						}
+
+						sum2 += run2;
+						System.out.println(sum2);
+
+						  if(sum2 >= distance) {
+							System.out.println("目的地にまで" + count2 + "時間かかりました。残りのガソリンは、" + car2.gasoline + "リットルです");
+							break;
+						}
+					}
+
+						int sum3 = 0; // carクラスのrunメソッドから返された値（距離）の合計
+						int count3 = 0; //目的地に行くのにかかった時間
+
+						 while(true) {
+						   int run3 = car3.run();
+						   count3++;
+
+							  if(run3 == -1) {
+								System.out.println("目的地に到達できませんでした");
+								break;
+							}
+
+							sum3 += run3;
+							System.out.println(sum3);
+
+							  if(sum3 >= distance) {
+								System.out.println("目的地にまで" + count3 + "時間かかりました。残りのガソリンは、" + car3.gasoline + "リットルです");
+								break;
+							}
+						}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 }

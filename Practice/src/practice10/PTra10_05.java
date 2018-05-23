@@ -41,8 +41,8 @@ public class PTra10_05 {
 		// 目的地までの距離
 		final int distance = 300;
 
-		int sum = 0;
-		int count = 0;
+		int sum = 0; // carクラスのrunメソッドから返された値（距離）の合計
+		int count = 0; //目的地に行くのにかかった時間
 		while(true) {
 
 			int run1 = car.run();
