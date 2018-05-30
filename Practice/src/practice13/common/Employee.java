@@ -2,12 +2,13 @@ package practice13.common;
 
 public class Employee extends Person {
 
-	private String departmentNm;
-	private int departmentCnt;
+	//* フィールド
+	private String departmentNm; //*departmentNm（部署名）		:	String
+	private int departmentCnt;   //*departmentCnt（部署人数）	:	int
 
 
 
-
+	//* メソッド 各フィールドのアクセサ
 	public String getDepartmentNm() {
 		return departmentNm;
 	}
