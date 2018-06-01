@@ -16,5 +16,15 @@ public class PTra17_04 {
 		 * ※ Thread.sleep を使用すること
 		 */
 
+		char data[] = str.toCharArray(); //* toCharArray()メソッド→String型の文字列をcharの配列へ変換する
+		int a = data.length; //* 配列数を取得
+		for (int i = 0;i <= a-1; i++) {
+			try {
+				Thread.sleep(1000); //* 指定ミリ秒の間眠る
+			}
+			catch(InterruptedException e){
+		}
+			System.out.print(data[i]);
 	}
+ }
 }
