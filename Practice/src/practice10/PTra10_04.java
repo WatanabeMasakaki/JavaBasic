@@ -18,7 +18,7 @@ public class PTra10_04 {
 	public static void main(String[] args) {
 
 		// ★ User型の変数が3つ入る配列usersを宣言・確保してください
-       User[] users = new User[3];
+       User[] users = new User[3]; //*クラス型の配列の宣言
 
 		// ★ java.util.Scannerクラスをインスタンス化し、変数scannerに代入してください
        Scanner scanner = new java.util.Scanner(System.in);
@@ -38,7 +38,7 @@ public class PTra10_04 {
 			// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
 	       String[] ad = line.split(",",0);
 
-	       User us = new User();
+	       User us = new User(); //*User型のusインスタンスの宣言
 	       us.userId  = Integer.parseInt(ad[0]);
 	       us.userNm =ad[1];
 	       us.mail = ad[2];

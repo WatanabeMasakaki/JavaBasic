@@ -1,9 +1,3 @@
-/*
- * PTra18_02.java
- *   作成	LIKEIT	2017
- *------------------------------------------------------------
- * Copyright(c) Rhizome Inc. All Rights Reserved.
- */
 package practice18;
 
 import java.io.File;
@@ -13,9 +7,7 @@ import java.util.Scanner;
 
 import entity.Player;
 
-
 public class PTra18_02 {
-
 	/*
 	 * ★ BestElevenCandidate.csvの情報を保持するためのクラス、entity.Playerクラスを作成してください
 	 *
@@ -32,9 +24,8 @@ public class PTra18_02 {
 	 */
 
 	public static void main(String[] args) {
-	   Player player = new Player();
-
-
+		//Player player = new Player(); //*Playerインスタンスの宣言
+		ArrayList<Player> array = new ArrayList<Player>();
 
 		/*
 		 * entity.Playerの作成後に行ってください
@@ -43,24 +34,31 @@ public class PTra18_02 {
 		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
 		 */
 
-       ArrayList<String> array = new ArrayList<>();
        try(Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"))) {
-           while (scanner.hasNext()) {
-               String line = scanner.nextLine();
-               // ★ 1行ごとにArrayListに格納してください
-               array.add(line);
 
-           }
+    	   while (scanner.hasNext()) {
+    		   Player player = new Player(); //*Playerインスタンスの宣言
+           String line = scanner.nextLine();
+           String[] line1  = line.split(",",0);
+
+           player.setPosition(line1[0]);
+           player.setName(line1[1]);
+           player.setCountry(line1[2]);
+           player.setTeam(line1[3]);
+
+           array.add(player);
+         }
+         // ★ 1行ごとにArrayListに格納してください
+
        } catch (FileNotFoundException e) {
-           System.out.println("ファイルが見つかりません");
+         System.out.println("ファイルが見つかりません");
+         }
+
+    // ★ ArrayListに格納されているインスタンス全てのtoStringメソッドを実行し、出力してください
+    		// ※ できれば拡張for文を使いましょう
+       for(Player name1 : array){
+           System.out.println(name1.toString());
        }
-
-
-		// ★ ArrayListに格納されているインスタンス全てのtoStringメソッドを実行し、出力してください
-		// ※ できれば拡張for文を使いましょう
-
-
-
 	}
 }
 
