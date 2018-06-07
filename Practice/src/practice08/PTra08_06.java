@@ -25,12 +25,17 @@ public class PTra08_06 {
 	 *
 	 * 引数で渡された値の前後に 「 」 を付与して出力するメソッド（"「"と引数と"」"の連結）
 	 */
-	public static void dispValue(String message) {
+	  public static void dispValue(String message) {
 		System.out.println("「" + message + "」");
-
 	}
 	  public static void dispValue (int x) {
-
+		System.out.println("「" + x + "」");
+	}
+	  public static void dispValue (double y) {
+		System.out.println("「" + y + "」");
+	}
+	  public static void dispValue (char z) {
+		System.out.println("「" + z + "」");
 	}
 
 

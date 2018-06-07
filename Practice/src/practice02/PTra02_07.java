@@ -11,7 +11,7 @@ public class PTra02_07 {
 		int num = 97;
 		System.out.println("num:" + num);
 
-		int target = 97;
+		int target = 7;
 
 		System.out.println(num/target);
 

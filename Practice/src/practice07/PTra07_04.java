@@ -18,7 +18,7 @@ public class PTra07_04 {
 		   }
 
 		// ★ 0～51の中からランダムで値を取得して、変数indexに代入してください
-          int num = new java.util.Random().nextInt(51);
+          int num = new java.util.Random().nextInt(52);
           int index = num;
           System.out.println(index);
 

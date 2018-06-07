@@ -14,7 +14,7 @@ public class PTra09_02 {
 		// ※ Utilはインポートしても良いし、完全限定名で記述しても良いです
 		String[] array2 = practice09.util.Util.shuffleArray(array);
 		for (String value : array2) {
-		System.out.println(array2);
+		System.out.println(value);
 		}
 		// ★ ランダムに並び替えた後の配列を前から順に全て表示してください
 
